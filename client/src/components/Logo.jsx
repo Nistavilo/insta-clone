@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Logo = () => {
+export const Logo = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default Logo
+    <Link to="/" className="flex items-center">
+      <img
+        src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+        alt="logo"
+        className="h-8 w-auto"
+      />
+    </Link>
+  );
+};
